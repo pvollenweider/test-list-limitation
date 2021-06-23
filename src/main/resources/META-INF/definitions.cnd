@@ -1,0 +1,17 @@
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+
+[jnt:customList] > jnt:contentList, jmix:hiddenType orderable
+ + * (jmix:contentAllowed)
+
+[jmix:contentAllowed] mixin
+
+[jnt:contentType1] > jnt:content, jmix:basicContent, jmix:contentAllowed
+ - text1 (string)
+
+[jnt:contentType2] > jnt:content, jmix:basicContent, jmix:contentAllowed
+ - text2 (string)
+
+[jnt:contentType3] > jnt:content, jmix:basicContent, jmix:contentAllowed
+ - text3 (string)
+
